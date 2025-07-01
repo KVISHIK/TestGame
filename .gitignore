@@ -1,14 +1,77 @@
-Binaries
-DerivedDataCache
-Intermediate
-Saved
-.vscode
-.vs
-*.VC.db
-*.opensdf
-*.opendb
-*.sdf
+###########################
+# Unreal Engine Git Ignore
+###########################
+
+# Build output
+Binaries/
+Build/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# Visual Studio files
+.vs/
+.vscode/
 *.sln
 *.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Xcode
 *.xcodeproj
 *.xcworkspace
+
+# Compiled binaries
+*.exe
+*.dll
+*.lib
+*.app
+*.ipa
+*.so
+*.dylib
+*.a
+*.o
+*.obj
+
+# Precompiled headers
+*.pch
+*.gch
+
+# Fortran modules
+*.mod
+
+# Unreal Engine generated files (map build data, etc)
+*_BuiltData.uasset
+
+# Unreal Plugin binaries and intermediates
+Plugins/**/Binaries/*
+Plugins/**/Intermediate/*
+
+# SourceArt (если вдруг кто-то использует)
+SourceArt/**
+
+# Build tools specific files
+.vsconfig
+
+# Optional - игнорировать локальные пакеты и временные данные
+*.tmp
+*.log
+
+# Optional - если используешь Perforce или другие системы SCM
+*.p4s
+*.p4config
+
+# Папки с кэшем паковок, иногда появляются
+UnrealPakTemp/
+
+# Временные сборочные скрипты
+Script/
+
+# Локальные Backups редактора (если включены)
+Backup/
+
+# Ignore autosaves (если включены)
+Autosaves/
+
